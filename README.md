@@ -7,7 +7,10 @@ ng-annotate is deprecated. Consider using https://github.com/schmod/babel-plugin
 
 WebPack plugin that runs [ng-annotate](https://github.com/olov/ng-annotate) on your bundles
 
-Based on [ngmin-webpack-plugin](https://github.com/jeffling/ngmin-webpack-plugin)
+Based on [ng-annotate-webpack-plugin](https://github.com/jeffling/ng-annotate-webpack-plugin)
+Old version no longer works with webpack 4 because ngAnnotate, which this package is based on,
+is no longer maintained. This fork is replacing the old ngAnnotate used in the plugin with a 
+patched version of ngAnnotate which works with newer es2015 code syntax
 
 # Usage
 In webpack.config.js:
