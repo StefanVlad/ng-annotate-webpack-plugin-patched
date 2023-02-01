@@ -16,7 +16,7 @@ patched version of ngAnnotate which works with newer es2015 code syntax
 In webpack.config.js:
 ```javascript
 var webpack = require('webpack');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin-patched');
 
 module.exports = {
     /// ... rest of config
@@ -28,7 +28,7 @@ module.exports = {
 To modify the default plugin options or to add options for `ng-annotate`:
 ```javascript
 var webpack = require('webpack');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin-patched');
 
 module.exports = {
     /// ... rest of config
@@ -47,7 +47,7 @@ annotated. To customize this behavior, set the option `annotateChunk` to a metho
 
 ```javascript
 var webpack = require('webpack');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin-patched');
 
 module.exports = {
     /// ... rest of config
